@@ -1,0 +1,56 @@
+ <h2 class="page-header">Dashboard</h2>
+<p>Please fillup below details to Uplaod <strong>new product:</strong></p>  
+
+
+<div class="container">
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+    
+      <div class="file-field input-field">
+        <div class="btn grey">
+          <span>Product title:</span>
+          <input name="title" type="text" required>
+        </div>
+      </div>
+      <div class="file-field input-field">
+        <div class="btn grey">
+          <span>Product sku:</span>
+          <input name="sku" type="text" required>
+        </div>
+      </div>
+      <div class="file-field input-field">
+        <div class="btn grey">
+          <span>Product price:</span>
+          <input name="price" type="number" required min=0 max=10000000000>
+        </div>
+      </div>
+      <div class="file-field input-field">
+        <div class="btn grey">
+          <span>Product category:</span>
+          <input name="category" type="text" required>
+        </div>
+      </div>
+      <div class="file-field input-field">
+        <div class="btn grey">
+          <span>Product description:</span>
+          <textarea name="description" type="text" rows="4" cols="50" style="max-width:100%" required></textarea>
+        </div>
+      </div>
+      <div class="file-field input-field">
+        <div class="btn grey">
+          <span>Default Product Image:</span>
+          <input name="img_url" type="file" required>
+        </div>
+        <!--<div class="file-path-wrapper">
+          <input class="file-path validate" type="text" required>
+        </div>-->
+      </div>
+	  <div class="file-field input-field">
+        <div class="btn grey">
+          <span>Other Product Images:</span>
+          <input name="otherimages" type="file" multiple >
+        </div>
+      </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+    <br>
+  </div>

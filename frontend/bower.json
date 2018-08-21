@@ -1,0 +1,25 @@
+{
+  "name": "product-management-app",
+  "description": "This is a demo application to add the product, list product and add to cart options.",
+  "main": "server.js",
+  "authors": [
+    "Jaydeep Chabhadiya <chabhadiyajaydeep@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-ui-router": "^1.0.3",
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "html5shiv": "^3.7.3"
+  }
+}

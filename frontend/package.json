@@ -1,0 +1,28 @@
+{
+  "name": "product-management-app",
+  "version": "1.0.0",
+  "description": "This is a demo application to add the product, list product and add to cart options.",
+  "main": "server.js",
+  "scripts": {
+    "preinstall": "npm install bower -g",
+    "postinstall": "bower install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "lint": "eslint client/app/"
+  },
+  "author": "Jaydeep Chabhadiya <chabhadiyajaydeep@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "bower": "^1.8.0",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "mongodb": "^2.2.26",
+    "morgan": "^1.8.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.1.1",
+    "eslint-config-angular": "^0.5.0",
+    "eslint-plugin-angular": "^3.0.0"
+  }
+}

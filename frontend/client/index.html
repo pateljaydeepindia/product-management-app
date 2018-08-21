@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="This is a demo application to add the product, list product and add to cart options.">
+        <meta name="author" content="Jaydeep Chabhadiya">
+        <base href="/">
+
+        <title>Product Management App | Jaydeep Chabhadiya</title>
+
+        <link rel="icon" href="app/assets/images/favicon.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="app/assets/images/favicon.png" type="image/x-icon" />
+
+        <!-- stylesheets below -->
+        <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="app/app.css">
+        <style type="text/css">.collapse {overflow: hidden;display: block;}.navbar-form {text-align: center}.col-sm-3.col-xs-6.relatedItem{mrgin-top: 10px;padding-right: 0}@media all and (max-width: 768px){#empty_cart{float:none!important;margin-top:auto!important;}}</style>
+    </head>
+
+    <body ng-app="myApp">
+        <my-navigation></my-navigation>
+       
+         <ui-view></ui-view>
+
+        <my-footer></my-footer>
+
+        <!-- Scripts loaded below for dependencies -->
+        <script src="vendor/angular/angular.js"></script>
+        <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="app/app.js"></script>
+        <script src="app/components/main/main.component.js"></script>
+        <script src="app/components/item/item.component.js"></script>
+        <script src="app/components/cart/cart.component.js"></script>
+        <script src="app/components/search/search.component.js"></script>
+        <script src="app/components/nav/nav.component.js"></script>
+        <script src="app/components/footer/footer.component.js"></script>
+        <script src="vendor/jquery/dist/jquery.min.js"></script>        
+        <script src="vendor/jquery/dist/bootstrap.js"></script> 
+    </body>
+    <script type="text/javascript">
+    jQuery(document).ready(function(){
+        jQuery('.navbar-inverse .navbar-toggle').trigger('click').trigger('click');
+    })
+    </script>>
+
+</html>
